@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Générateur de citations</title>
+	<link href="https://fonts.googleapis.com/css?family=Fredoka+One|Raleway:400,700" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<div id="main">
+
+		<div id="head">
+			<h1>Générateur de citations </h1>
+			<h2>Best Of des meilleures citations 2017</h2>
+			<p id="expand">+</p>
+		</div>
+
+		<div id="container">
+			<form id="form1">
+				<p>
+					<select name="type" id="type">
+						<option value=0>Choisissez une catégorie :</option>
+						<option value=1>Humoristique</option>
+				    	<option value=2>Légendaire</option>
+				    </select>
+				</p>
+
+				<p id="radios">
+					<span id='combien'>Combien en voulez-vous :</span><br/>
+					<input type="radio" id="nb1" name="nb" value=1 checked/><label for="nb1">1</label>
+					<input type="radio" id="nb2" name="nb" value=2 /><label for="nb2">2</label>
+					<input type="radio" id="nb3" name="nb" value=3 /><label for="nb3">3</label>
+					<input type="radio" id="nb4" name="nb" value=4 /><label for="nb4">4</label>
+					<input type="radio" id="nb5" name="nb" value=5 /><label for="nb5">5</label>
+				</p>
+
+				<p>
+					<input id="button" type="submit" value="Générer"/>
+				</p>
+			</form>
+
+			<div id="content"></div>
+		</div>
+		<div id="endMessage"></div>
+	</div>
+
+	<script src="js/script.js"></script>
+</body>
+</html>
